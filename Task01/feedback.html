@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css link -->
+  <link rel="stylesheet" href="mystyle.css">
+<!-- vue.js link -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"defer></script>
+  <!-- javascript link -->
+  <script src="java.js"></script>
+   
+  <title>echofriend</title>
+ 
+</head>
+<body>
+ 
+  <nav>
+   <div class="navigationhead">
+    <a href="">Eco Friend</a>
+   </div> 
+   <!-- menu -->
+   <ul>  
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="issue.html">issue</a></li>
+    <li><a href="solution.html">Solution</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+    <li><a  href="contact.html">Contact us</a>
+    </ul>
+    
+    </nav>
+    <br>
+    
+    <h1>Give Me Your Feedback and Your Details</h1>
+    <br>
+   
+    <!-- form -->
+  
+    <div id="app">
+      <form @submit.prevent="submitForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" v-model="formData.name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" v-model="formData.email" required>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" v-model="formData.message" required></textarea>
+          
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="app.js"></script>
+  <footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2024 echo friend</p>
+        <p>www.echofrd.com</p>
+    </div>
+</footer>
+</body>
+</html>
